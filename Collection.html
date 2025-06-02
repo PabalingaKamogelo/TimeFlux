@@ -229,7 +229,21 @@
     
       <p style="margin-top: 1rem;">&copy; 2025 Timeflux. All rights reserved.</p>
     </footer>
-    
+    <div id="cart-sidebar" class="cart-sidebar">
+       <div class="cart-header">
+          <h3>Your Cart</h3>
+          <button id="close-cart">&times;</button>
+       </div>
+       <div id="cart-items" class="cart-items"></div>
+         <div class="cart-total">
+         <strong>Total: $<span id="cart-total">0</span></strong>
+      </div>
+    </div>
+
+    <!-- Cart open button -->
+    <button id="open-cart" class="cart-toggle-btn">🛒</button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
