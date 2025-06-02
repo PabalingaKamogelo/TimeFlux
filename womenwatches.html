@@ -154,7 +154,16 @@
       </div>
     </div>
   </section>
+<script>
 
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = button.getAttribute('data-price');
+        alert(`${name} has been added to your cart for $${price}`);
+      });
+    });
+  </script>
   <!-- Footer from index -->
   <footer class="footer animate-fade">
     <p>&copy; 2025 Timeflux. All rights reserved.</p>
